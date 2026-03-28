@@ -9,7 +9,10 @@ const dashboardRoutes = require('./routes/dashboard');
 const app = express();
 
 // Middleware
-app.use(cors({origin:['https://clientstack-frontend.vercel.app/'],credentials:true}));
+app.use(cors({
+  origin: "https://clientstack-frontend.vercel.app",
+  credentials: true
+}));
 app.use(express.json());
 
 // MongoDB Connection
